@@ -44,6 +44,7 @@ namespace Operaciones_basicas
 			this.btnRestar = new System.Windows.Forms.Button();
 			this.btnMultiplica = new System.Windows.Forms.Button();
 			this.bntDividir = new System.Windows.Forms.Button();
+			this.btnModulo = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -116,11 +117,22 @@ namespace Operaciones_basicas
 			this.bntDividir.UseVisualStyleBackColor = true;
 			this.bntDividir.Click += new System.EventHandler(this.Button4Click);
 			// 
+			// btnModulo
+			// 
+			this.btnModulo.Location = new System.Drawing.Point(161, 104);
+			this.btnModulo.Name = "btnModulo";
+			this.btnModulo.Size = new System.Drawing.Size(100, 23);
+			this.btnModulo.TabIndex = 8;
+			this.btnModulo.Text = "MODULO%";
+			this.btnModulo.UseVisualStyleBackColor = true;
+			this.btnModulo.Click += new System.EventHandler(this.BtnModuloClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(269, 261);
+			this.Controls.Add(this.btnModulo);
 			this.Controls.Add(this.bntDividir);
 			this.Controls.Add(this.btnMultiplica);
 			this.Controls.Add(this.btnRestar);
@@ -134,6 +146,7 @@ namespace Operaciones_basicas
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnModulo;
 		private System.Windows.Forms.Button bntDividir;
 		private System.Windows.Forms.Button btnMultiplica;
 		private System.Windows.Forms.Button btnRestar;

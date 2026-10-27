@@ -57,5 +57,12 @@ namespace Operaciones_basicas
 			multiplica=double.Parse(txtN1.Text)*double.Parse(txtN2.Text);
 			MessageBox.Show("El resultado de la multiplicacion es: " + multiplica.ToString());
 		}
+		
+		void BtnModuloClick(object sender, EventArgs e)
+		{
+			double modulo;
+			modulo=double.Parse(txtN1.Text)%double.Parse(txtN2.Text);
+			MessageBox.Show("El resultado de el modulo es: " + modulo.ToString()+ "%");
+		}
 	}
 }
