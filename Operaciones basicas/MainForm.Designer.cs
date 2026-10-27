@@ -36,6 +36,7 @@ namespace Operaciones_basicas
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.txtN1 = new System.Windows.Forms.TextBox();
@@ -80,9 +81,11 @@ namespace Operaciones_basicas
 			// 
 			// btnSumar
 			// 
-			this.btnSumar.Location = new System.Drawing.Point(2, 76);
+			this.btnSumar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSumar.BackgroundImage")));
+			this.btnSumar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btnSumar.Location = new System.Drawing.Point(2, 45);
 			this.btnSumar.Name = "btnSumar";
-			this.btnSumar.Size = new System.Drawing.Size(75, 23);
+			this.btnSumar.Size = new System.Drawing.Size(75, 54);
 			this.btnSumar.TabIndex = 4;
 			this.btnSumar.Text = "SUMAR";
 			this.btnSumar.UseVisualStyleBackColor = true;
@@ -90,9 +93,11 @@ namespace Operaciones_basicas
 			// 
 			// btnRestar
 			// 
-			this.btnRestar.Location = new System.Drawing.Point(79, 75);
+			this.btnRestar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRestar.BackgroundImage")));
+			this.btnRestar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.btnRestar.Location = new System.Drawing.Point(79, 45);
 			this.btnRestar.Name = "btnRestar";
-			this.btnRestar.Size = new System.Drawing.Size(75, 23);
+			this.btnRestar.Size = new System.Drawing.Size(75, 53);
 			this.btnRestar.TabIndex = 5;
 			this.btnRestar.Text = "RESTAR";
 			this.btnRestar.UseVisualStyleBackColor = true;
@@ -100,9 +105,11 @@ namespace Operaciones_basicas
 			// 
 			// btnMultiplica
 			// 
-			this.btnMultiplica.Location = new System.Drawing.Point(158, 74);
+			this.btnMultiplica.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMultiplica.BackgroundImage")));
+			this.btnMultiplica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.btnMultiplica.Location = new System.Drawing.Point(158, 45);
 			this.btnMultiplica.Name = "btnMultiplica";
-			this.btnMultiplica.Size = new System.Drawing.Size(103, 23);
+			this.btnMultiplica.Size = new System.Drawing.Size(103, 52);
 			this.btnMultiplica.TabIndex = 6;
 			this.btnMultiplica.Text = "MULTIPLICACION";
 			this.btnMultiplica.UseVisualStyleBackColor = true;
@@ -110,9 +117,11 @@ namespace Operaciones_basicas
 			// 
 			// bntDividir
 			// 
+			this.bntDividir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bntDividir.BackgroundImage")));
+			this.bntDividir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 			this.bntDividir.Location = new System.Drawing.Point(79, 104);
 			this.bntDividir.Name = "bntDividir";
-			this.bntDividir.Size = new System.Drawing.Size(75, 23);
+			this.bntDividir.Size = new System.Drawing.Size(75, 53);
 			this.bntDividir.TabIndex = 7;
 			this.bntDividir.Text = "DIVICION";
 			this.bntDividir.UseVisualStyleBackColor = true;
@@ -120,9 +129,11 @@ namespace Operaciones_basicas
 			// 
 			// btnModulo
 			// 
+			this.btnModulo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnModulo.BackgroundImage")));
+			this.btnModulo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 			this.btnModulo.Location = new System.Drawing.Point(161, 104);
 			this.btnModulo.Name = "btnModulo";
-			this.btnModulo.Size = new System.Drawing.Size(100, 23);
+			this.btnModulo.Size = new System.Drawing.Size(100, 53);
 			this.btnModulo.TabIndex = 8;
 			this.btnModulo.Text = "MODULO%";
 			this.btnModulo.UseVisualStyleBackColor = true;
@@ -132,7 +143,7 @@ namespace Operaciones_basicas
 			// 
 			this.button1.Location = new System.Drawing.Point(2, 105);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
+			this.button1.Size = new System.Drawing.Size(75, 52);
 			this.button1.TabIndex = 9;
 			this.button1.Text = "FORMULARIO";
 			this.button1.UseVisualStyleBackColor = true;
@@ -142,6 +153,7 @@ namespace Operaciones_basicas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.Cyan;
 			this.ClientSize = new System.Drawing.Size(269, 261);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.btnModulo);

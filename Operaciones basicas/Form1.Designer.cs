@@ -36,6 +36,7 @@ namespace Operaciones_basicas
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
@@ -93,6 +94,8 @@ namespace Operaciones_basicas
 			// 
 			// btnCalcular
 			// 
+			this.btnCalcular.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCalcular.BackgroundImage")));
+			this.btnCalcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
 			this.btnCalcular.Location = new System.Drawing.Point(197, 116);
 			this.btnCalcular.Name = "btnCalcular";
 			this.btnCalcular.Size = new System.Drawing.Size(75, 70);
@@ -115,6 +118,7 @@ namespace Operaciones_basicas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.Red;
 			this.ClientSize = new System.Drawing.Size(284, 261);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.btnCalcular);
