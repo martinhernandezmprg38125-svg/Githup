@@ -64,5 +64,12 @@ namespace Operaciones_basicas
 			modulo=double.Parse(txtN1.Text)%double.Parse(txtN2.Text);
 			MessageBox.Show("El resultado de el modulo es: " + modulo.ToString()+ "%");
 		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			Form1 y = new Form1();
+			y.Show();
+			this.Hide();
+		}
 	}
 }

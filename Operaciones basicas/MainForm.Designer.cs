@@ -45,6 +45,7 @@ namespace Operaciones_basicas
 			this.btnMultiplica = new System.Windows.Forms.Button();
 			this.bntDividir = new System.Windows.Forms.Button();
 			this.btnModulo = new System.Windows.Forms.Button();
+			this.button1 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -127,11 +128,22 @@ namespace Operaciones_basicas
 			this.btnModulo.UseVisualStyleBackColor = true;
 			this.btnModulo.Click += new System.EventHandler(this.BtnModuloClick);
 			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(2, 105);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(75, 23);
+			this.button1.TabIndex = 9;
+			this.button1.Text = "FORMULARIO";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(269, 261);
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.btnModulo);
 			this.Controls.Add(this.bntDividir);
 			this.Controls.Add(this.btnMultiplica);
@@ -146,6 +158,7 @@ namespace Operaciones_basicas
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button btnModulo;
 		private System.Windows.Forms.Button bntDividir;
 		private System.Windows.Forms.Button btnMultiplica;
